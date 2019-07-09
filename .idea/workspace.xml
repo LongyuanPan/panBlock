@@ -204,7 +204,7 @@
       <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -308,12 +308,12 @@
       <workItem from="1562158485614" duration="648000" />
       <workItem from="1562159157580" duration="2305000" />
       <workItem from="1562161488346" duration="13204000" />
-      <workItem from="1562587347809" duration="4471000" />
+      <workItem from="1562587347809" duration="5070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20628000" />
+    <option name="totallyTimeSpent" value="21227000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,7 +325,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
