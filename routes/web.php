@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -19,11 +18,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('test','Controller@test');
-Auth::routes();
+Route::get('test','OrderController@test2');
 
-Route::get('/home', 'HomeController@index')->name('home');
+/**
+ * 事件系统
+ */
+Route::get('testThing','OrderController@test');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+

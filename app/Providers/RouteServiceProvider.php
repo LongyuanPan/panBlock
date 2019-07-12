@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Routing\Router;
+
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -33,13 +35,16 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function map()
+    public function map(Router $router)
     {
         $this->mapApiRoutes();
-
         $this->mapWebRoutes();
-
-        //
+        //通过$router进行转发
+            $router->group(['namespace' => $this->namespace], function ($router) {
+                foreach (glob(app_path('Http//Routes') . '/*.php') as $file) {
+                    $this->app->make('App\\Http\\Routes\\' . basename($file, '.php'))->map($router);
+                }
+            });
     }
 
     /**
