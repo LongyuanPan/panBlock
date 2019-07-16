@@ -18,7 +18,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('test','OrderController@test2');
+Route::get('test','OrderController@test5');
+Route::get('test2','OrderController@test6');
 
 /**
  * 事件系统

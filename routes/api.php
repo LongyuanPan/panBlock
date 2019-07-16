@@ -22,3 +22,7 @@ Route::group(['middleware'=>['auth:api','rbac']],function(){
     Route::post('details','Controller@details');
     Route::get('getList','Admin\IndexController@getList');
 });
+Route::group(['middleware'=>['auth:api']],function(){
+    Route::get('test','OrderController@test2');
+    Route::get('test2','OrderController@test5');
+});
